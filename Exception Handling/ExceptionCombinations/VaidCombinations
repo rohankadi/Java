@@ -1,0 +1,67 @@
+*************** VALID COMBINATIONS OF try, catch, finally *****************
+
+1)
+try {
+ }
+catch() {
+	
+}
+
+2)
+  try {}
+  catch() {	}
+  finally {}
+
+3) 
+ try{}
+finally{}
+
+4)
+	try {
+	  try {}
+	  catch() {
+		  
+	  }
+	}
+	catch() {
+		
+	}
+	
+5)
+	try {}
+	catch() {
+		  try {}
+		  catch() {
+			  
+		  }
+	}
+		
+6)
+	try {}
+	catch() {
+		  try {}
+		  catch() {
+			  
+		  }
+	}
+	
+	finally {}
+	
+7)
+  try {}
+	catch() {}
+	
+	finally {
+		 try {}
+		  catch() {
+			  
+		  }
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
