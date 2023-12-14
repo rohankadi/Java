@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-configuration PUBLIC    
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"    
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"> 
+
+<hibernate-configuration>
+
+<session-factory>
+
+<property name="connection.url">jdbc:mysql://localhost:3306/university</property>
+<property name="connection.username">root</property>
+<property name="connection.password">dream</property>
+
+<!-- from hibernate mapping to Data definition language -->
+<property name="hbm2ddl.auto"></property>
+
+</session-factory>
+
+</hibernate-configuration>
