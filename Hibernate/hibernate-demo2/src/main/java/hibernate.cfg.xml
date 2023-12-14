@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC    
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"    
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"> 
+        
+<hibernate-configuration>
+
+<session-factory>
+<!--telling hibernate to which driver is to load -->
+<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+<!-- telling hibernate what url to be used -->
+<property name = "hibernate.connection.url">jdbc:mysql://localhost:3306/HibernateDemo</property>
+<!-- telling hibernate what username is to be used -->
+<property name = "hibernate.connection.username">root</property>
+<!-- telling hibernate what password is to be used -->
+<property name = "hibernate.connection.password">dream</property>
+
+<!-- telling hibernate that what work is to do..? -->
+<property name = "hbm2ddl.auto">create</property>
+
+<property name = "hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+<!-- show  query -->
+<property name = "hibernate.show_sql">true</property>
+
+<!-- giving entity class name with package on which column we want to create -->
+<mapping class = "com.hib.entity.Student"/>
+
+</session-factory>
+
+</hibernate-configuration>
